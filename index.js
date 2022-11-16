@@ -1,5 +1,5 @@
 //JSON array of super heroes
-let arraySuperHeroesJson = `[{
+let arraySuperHeroesJSON = `[{
     "superHeroePic": "pics/batman.jpeg",
     "superHeroePicAlternativeText": "Batman",
     "superHeroeCharacter": "Бэтмен",
@@ -102,7 +102,7 @@ let arraySuperHeroesJson = `[{
 }]`;
 
 //parsing JSON array of super heroes
-const superHeroesBase = JSON.parse(arraySuperHeroesJson);
+const superHeroesBase = JSON.parse(arraySuperHeroesJSON);
 
 //function of creating div element from HTML string (reading br tag in text)
 function createElementFromHTML(htmlString) {
@@ -127,7 +127,7 @@ function showSlides(n) {
     <div><b>Подробнее:</b> ${createElementFromHTML(heroe.moreDetailed).innerHTML}</div><br>
     </div>`;
     //output of content to div (assignment of the browser content output variable)
-    document.getElementById("SuperheroeDescription").innerHTML = content;
+    document.getElementById("superHeroesDescription").innerHTML = content;
 }
 
 //slide gallery 
